@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute value selectors </title>
+    <style>
+        /* attribute value selectors */
+        input[type="text"] {
+            background-color: yellow;
+        }
+
+        input[type="number"] {
+            background-color: aqua;
+        }
+
+        /* Substring matching selectors */
+        a[href^=https] {
+            color: green;
+        }
+
+        /* wildcard selector */
+        a[href*="example"] {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="text input">
+        <input type="number" placeholder="number input">
+    </div>
+    <!-- substring matching selectors -->
+    <div>
+        <a href="https://example.com/">Secure link</a>
+        <a href="http://example.com/">Non-secure link</a>
+    </div>
+    <!-- wildcard selectors  -->
+    <div>
+        <a href="https://example.com/">This contains 'example' and is underlined.</a>
+        <a href="https://otherlink.com">This is not underlined.</a>
+    </div>
+</body>
+
+</html>
