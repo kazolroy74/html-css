@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        h1::before {
+            content: "*";
+        }
+
+        h2::after {
+            content: "#";
+            color: orange;
+        }
+
+        h3::first-letter {
+            color: red;
+            font-size: 23px;
+        }
+
+        input::placeholder {
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Bangladesh.</h1>
+    <h2>Welcome to my Home.</h2>
+    <h3>My home is also very beautiful for peace.</h3>
+    <input type="text" placeholder="Enter your name">
+</body>
+
+</html>
